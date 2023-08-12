@@ -1,0 +1,69 @@
+{% extends "base_template.html" %}
+
+{% block title %}Security Scan Report{% endblock %}
+{% block target_info %}Target: {{ target|e }}{% endblock %}
+
+{% block content %}
+    {% block executive_summary %}
+    <div class="section">
+        <div class="section-title">Executive Summary</div>
+        <p></p>
+    </div>
+    {% endblock %}
+    
+    {% block overview %}
+    <div class="section">
+        <div class="section-title">Overview</div>
+        <p></p>
+    </div>
+    {% endblock %}
+    
+    {% block methodology %}
+    <div class="section">
+        <div class="section-title">Methodology</div>
+        <p></p>
+    </div>
+    {% endblock %}
+    
+    {% block detailed_findings %}
+    <div class="section">
+        <div class="section-title">Detailed Findings</div>
+        <div class="subsection">
+            <div class="subsection-title">Vulnerability Distribution</div>
+            <div class="graph vulnerability-chart">
+                <img src="" alt="Vulnerability Distribution">
+            </div>
+        </div>
+        <div class="subsection">
+            <div class="subsection-title">Vulnerability Details</div>
+            <div class="details-table">
+                <tr>
+                    <th>Vulnerability</th>
+                    <th>Result</th>
+                    <th>Evidence</th>
+                    <th>Remediation</th>
+                </tr>
+                {% for finding in detailed_findings %}
+                <tr>
+                    <td>{{ finding.vulnerability|e }}</td>
+                    <td>{{ finding.result|e }}</td>
+                    <td>
+                        <div class="evidence">
+                            {{ finding.evidence|e }}
+                        </div>
+                    </td>
+                    <td>{{ finding.remediation|e }}</td>
+                </tr>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    
+    {% block additional_information %}
+    <div class="section">
+        <div class="section-title">Additional Information</div>
+        {{ generate_metadata(metadata) }}
+    </div>
+    {% endblock %}
+{% endblock %}
