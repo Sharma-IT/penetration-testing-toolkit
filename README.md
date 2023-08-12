@@ -1,8 +1,8 @@
-# 🔒 Penetration Testing Toolkit
+# Penetration Testing Toolkit
 
 The Penetration Testing Toolkit is a robust Python-based tool that combines various techniques and tools to perform thorough security assessments on web applications. From information gathering to vulnerability scanning and manual testing, this toolkit provides a structured and automated approach to identifying vulnerabilities and helping secure digital assets.
 
-## 📃 Features
+## Features
 
 - Information gathering using DNS lookup, Whois lookup, and HTTP header retrieval.
 - Vulnerability scanning for SQL injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF).
@@ -11,7 +11,7 @@ The Penetration Testing Toolkit is a robust Python-based tool that combines vari
 - Post-exploitation tasks for collecting credentials and sensitive data.
 - Report generation in HTML and JSON formats, including detailed findings and vulnerability distribution graphs.
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.x
 - Required Python libraries (install using `pip`):
@@ -20,7 +20,7 @@ The Penetration Testing Toolkit is a robust Python-based tool that combines vari
   - `jinja2`
   - `matplotlib`
 
-## 🛠️ Usage
+## Usage
 
 1. Clone this repository:
 
@@ -43,7 +43,7 @@ python main.py
 
 4. Follow the prompts and menu options to perform various security assessment tasks.
 
-## 🗂 Project Structure
+## Project Structure
 
 - `main.py`: The main Python script that orchestrates the penetration testing tasks.
 - `templates/`: Folder containing HTML template files for report generation.
@@ -51,25 +51,25 @@ python main.py
 - `payload.php`: PHP payload for exploitation. Ensure proper usage and security measures.
 - `database.db`: SQLite database for storing results and report details.
 
-## 🚨Security Considerations
+## Security Considerations
 
 - Use this toolkit responsibly and only on systems you have explicit permission to assess.
 - Always follow ethical hacking guidelines and obtain proper authorisation before conducting any penetration testing.
 - Securely store sensitive data and credentials used for testing.
 - Regularly update and patch your testing environment to prevent unintended consequences.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This toolkit is provided for educational and ethical purposes only. I am are not responsible for any misuse or damage caused by its use.
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcomed. For major changes, please open an issue first to discuss what you would like to change.
 
-## 📧 Contact
+## Contact
 
 Shubham Sharma - [My LinkedIn](https://www.linkedin.com/in/sharma-it/) - shubhamsharma.emails@gmail.com.
 
-## 📜 License
+## License
 
 This project is licensed under the GPL 3.0 License - see the [LICENSE](LICENCE) file for details.
