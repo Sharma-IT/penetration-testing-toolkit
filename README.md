@@ -4,12 +4,12 @@ The Penetration Testing Toolkit is a robust Python-based tool that combines vari
 
 ## Features
 
-- Information gathering using DNS lookup, Whois lookup, and HTTP header retrieval.
-- Vulnerability scanning for SQL injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF).
-- Manual testing for insecure file upload and misconfigured access controls.
-- Exploitation for SQL injection and Cross-Site Scripting (XSS).
-- Post-exploitation tasks for collecting credentials and sensitive data.
-- Report generation in HTML and JSON formats, including detailed findings and vulnerability distribution graphs.
+- **Information gathering** using DNS lookup, Whois lookup, and HTTP header retrieval.
+- **Vulnerability scanning** for SQL injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF).
+- **Manual testing** for insecure file upload and misconfigured access controls.
+- **Exploitation** for SQL injection and Cross-Site Scripting (XSS).
+- **Post-exploitation** tasks for collecting credentials and sensitive data.
+- **Report generation** in HTML and JSON formats, including detailed findings and vulnerability distribution graphs.
 
 ## Prerequisites
 
@@ -24,20 +24,20 @@ The Penetration Testing Toolkit is a robust Python-based tool that combines vari
 
 1. Clone this repository:
 
-```sh
+```
 git clone https://github.com/Sharma-IT/penetration-testing-toolkit.git
 cd penetration-testing-toolkit
 ```
 
 2. Install the required Python libraries:
 
-```sh
+```
 pip install -r requirements.txt
 ```
 
 3. Run the script:
 
-```sh
+```
 python main.py
 ```
 
@@ -72,4 +72,4 @@ Shubham Sharma - [My LinkedIn](https://www.linkedin.com/in/sharma-it/) - shubham
 
 ## License
 
-This project is licensed under the GPL 3.0 License - see the [LICENSE](LICENCE) file for details.
+This project is licensed under the GPL 3.0 License - see the [LICENSE](LICENSE) file for details.
