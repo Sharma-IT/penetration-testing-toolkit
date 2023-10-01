@@ -2,6 +2,18 @@
 
 The Penetration Testing Toolkit is a robust Python-based tool that combines various techniques and tools to perform thorough security assessments on web applications. From information gathering to vulnerability scanning and manual testing, this toolkit provides a structured and automated approach to identifying vulnerabilities and helping secure digital assets.
 
+# Table of Contents
+
+1. [Features](#features)
+2. [Prerequisites](#prerequisites)
+3. [Usage](#usage)
+4. [Project Structure](#project-structure)
+5. [Security Considerations](#security-considerations)
+6. [Disclaimer](#disclaimer)
+7. [Contributing](#contributing)
+8. [Contact](#contact)
+9. [License](#license)
+
 ## Features
 
 - **Information gathering** using DNS lookup, Whois lookup, and HTTP header retrieval.
