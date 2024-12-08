@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Security Scan Report{% endblock %}</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --danger-color: #e74c3c;
+            --warning-color: #f1c40f;
+            --success-color: #2ecc71;
+            --text-color: #2c3e50;
+            --bg-color: #f5f6fa;
+            --card-bg: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        
+        .header p {
+            margin: 1rem 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        .subsection {
+            margin: 1.5rem 0;
+        }
+        
+        .subsection-title {
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .details-table {
+            width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        
+        .details-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        
+        .details-table th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 500;
+        }
+        
+        .details-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .details-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .details-table tr:hover {
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+        
+        .vulnerability-high {
+            color: var(--danger-color);
+            font-weight: 600;
+        }
+        
+        .vulnerability-medium {
+            color: var(--warning-color);
+            font-weight: 600;
+        }
+        
+        .vulnerability-low {
+            color: var(--success-color);
+            font-weight: 600;
+        }
+        
+        .evidence {
+            background: #f8f9fa;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1rem;
+            margin: 0.5rem 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 1.5rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 0 0.5rem;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+            
+            .details-table {
+                overflow-x: auto;
+            }
+        }
+    </style>
+    {% block custom_scripts %}{% endblock %}
+    {% block assets %}{% endblock %}
+    {% block metadata %}{% endblock %}
+</head>
+<body>
+    <div class="header">
+        <h1>{% block heading %}Security Scan Report{% endblock %}</h1>
+        <p>{% block target_info %}{% endblock %}</p>
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

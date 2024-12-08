@@ -1,0 +1,31 @@
+{% extends "base_template.html" %}
+
+{% block title %}Security Scan Report{% endblock %}
+{% block target_info %}Target: {{ target|e }} - Scan Date: {{ scan_date|e }}{% endblock %}
+
+{% block content %}
+    <div class="section">
+        <div class="section-title">Scan Findings</div>
+        {% for finding in findings %}
+        <div class="subsection">
+            <div class="subsection-title">{{ finding.phase|e }}</div>
+            <div class="details-table">
+                <table>
+                    <tr>
+                        {% for key in finding.details[0].keys() %}
+                        <th>{{ key|title|e }}</th>
+                        {% endfor %}
+                    </tr>
+                    {% for detail in finding.details %}
+                    <tr>
+                        {% for value in detail.values() %}
+                        <td>{{ value|e }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
