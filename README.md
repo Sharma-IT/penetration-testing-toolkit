@@ -119,11 +119,11 @@ penetration-testing-toolkit/
 │   ├── utils/          # Utility functions
 │   └── templates/      # HTML report templates
 ├── artifacts/
-│   ├── logs/          # Log files
-│   ├── db/            # Database files
-│   └── reports/       # Generated reports
+│   ├── logs/           # Log files
+│   ├── db/             # Database files
+│   └── reports/        # Generated reports
 ├── requirements.txt    # Python dependencies
-└── README.md          # Project documentation
+└── README.md           # Project documentation
 ```
 
 ## Installation
