@@ -4,7 +4,7 @@ A comprehensive cybersecurity tool for automated security assessments and vulner
 
 ## Features
 
-<details open>
+<details>
 <summary><h3>1. Information Gathering</h3></summary>
 
 <details>
