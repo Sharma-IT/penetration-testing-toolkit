@@ -4,109 +4,266 @@ A comprehensive cybersecurity tool for automated security assessments and vulner
 
 ## Features
 
-### 1. Information Gathering
-- **DNS Enumeration**: Discover subdomains, DNS records, and zone transfers
-- **Port Scanning**: Identify open ports and running services
-- **Technology Detection**: Fingerprint web servers, frameworks, and CMS
-- **Directory Enumeration**: Discover hidden directories and files
-- **SSL/TLS Analysis**: Check certificate validity and security configurations
-- **WHOIS Information**: Gather domain registration and ownership details
-- **Email Harvesting**: Find email addresses associated with the domain
-- **Metadata Extraction**: Analyse documents and images for metadata
+<details open>
+<summary><h3>1. Information Gathering</h3></summary>
 
-### 2. Vulnerability Scanning
-- **SQL Injection**: Detect various SQL injection vulnerabilities
-  - Union-based injection
-  - Error-based injection
-  - Time-based blind injection
-  - Boolean-based blind injection
-- **Cross-Site Scripting (XSS)**
-  - Reflected XSS
-  - Stored XSS
-  - DOM-based XSS
-  - Template injection
-- **Security Misconfigurations**
-  - Default credentials
-  - Exposed sensitive files
-  - Insecure HTTP headers
-  - Debug modes enabled
-- **Known CVE Detection**: Check for known vulnerabilities in detected software versions
+<details>
+<summary><strong>DNS Enumeration</strong></summary>
+Discover subdomains, DNS records, and zone transfers
+</details>
 
-### 3. Manual Testing
-- **Directory Traversal**: Test for path traversal vulnerabilities
-- **File Upload Testing**: Check for unsafe file upload handling
-  - Extension validation bypass
-  - Content-type validation
-  - File execution tests
-- **Access Control**: Test authorisation mechanisms
-  - Horizontal privilege escalation
-  - Vertical privilege escalation
-  - IDOR vulnerabilities
-- **Input Validation**: Test form fields and parameters
-  - Command injection
-  - XML injection
-  - Template injection
-  - NoSQL injection
+<details>
+<summary><strong>Port Scanning</strong></summary>
+Identify open ports and running services
+</details>
 
-### 4. Exploitation
-- **Advanced SQL Injection**
-  - Database enumeration
-  - Data extraction
-  - Command execution
-- **XSS Exploitation**
-  - Cookie stealing
-  - Keylogging
-  - Phishing payloads
-- **File Inclusion**
-  - Local File Inclusion (LFI)
-  - Remote File Inclusion (RFI)
-  - PHP wrapper exploitation
-- **Command Injection**
-  - OS command execution
-  - Reverse shell establishment
-  - File system access
-- **Authentication Bypass**
-  - SQL injection bypass
-  - Logic flaws exploitation
-  - Session manipulation
+<details>
+<summary><strong>Technology Detection</strong></summary>
+Fingerprint web servers, frameworks, and CMS
+</details>
 
-### 5. Post-Exploitation
-- **Privilege Escalation**
-  - Kernel exploits
-  - Misconfigured permissions
-  - Vulnerable services
-- **Network Enumeration**
-  - Internal network scanning
-  - Service discovery
-  - Asset identification
-- **Data Exfiltration**
-  - Database dumping
-  - File system access
-  - Configuration retrieval
-- **Persistence**
-  - Backdoor placement
-  - Credential harvesting
-  - System monitoring
+<details>
+<summary><strong>Directory Enumeration</strong></summary>
+Discover hidden directories and files
+</details>
 
-### 6. Reporting
-- **Comprehensive HTML Reports**
-  - Executive summary
-  - Technical details
-  - Proof of concept
-  - Remediation steps
-  - Risk ratings
-- **JSON Export**
-  - Machine-readable format
-  - Integration-ready data
-  - Detailed scan results
-- **Database Storage**
-  - Historical scan data
-  - Vulnerability tracking
-  - Progress monitoring
-- **Custom Templates**
-  - Customisable report formats
-  - Brand-specific styling
-  - Multiple export options
+<details>
+<summary><strong>SSL/TLS Analysis</strong></summary>
+Check certificate validity and security configurations
+</details>
+
+<details>
+<summary><strong>WHOIS Information</strong></summary>
+Gather domain registration and ownership details
+</details>
+
+<details>
+<summary><strong>Email Harvesting</strong></summary>
+Find email addresses associated with the domain
+</details>
+
+<details>
+<summary><strong>Metadata Extraction</strong></summary>
+Analyse documents and images for metadata
+</details>
+
+</details>
+
+<details>
+<summary><h3>2. Vulnerability Scanning</h3></summary>
+
+<details>
+<summary><strong>SQL Injection</strong></summary>
+Detect various SQL injection vulnerabilities
+<ul>
+<li>Union-based injection</li>
+<li>Error-based injection</li>
+<li>Time-based blind injection</li>
+<li>Boolean-based blind injection</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Cross-Site Scripting (XSS)</strong></summary>
+<ul>
+<li>Reflected XSS</li>
+<li>Stored XSS</li>
+<li>DOM-based XSS</li>
+<li>Template injection</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Security Misconfigurations</strong></summary>
+<ul>
+<li>Default credentials</li>
+<li>Exposed sensitive files</li>
+<li>Insecure HTTP headers</li>
+<li>Debug modes enabled</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Known CVE Detection</strong></summary>
+Check for known vulnerabilities in detected software versions
+</details>
+
+</details>
+
+<details>
+<summary><h3>3. Manual Testing</h3></summary>
+
+<details>
+<summary><strong>Directory Traversal</strong></summary>
+Test for path traversal vulnerabilities
+</details>
+
+<details>
+<summary><strong>File Upload Testing</strong></summary>
+Check for unsafe file upload handling
+<ul>
+<li>Extension validation bypass</li>
+<li>Content-type validation</li>
+<li>File execution tests</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Access Control</strong></summary>
+Test authorisation mechanisms
+<ul>
+<li>Horizontal privilege escalation</li>
+<li>Vertical privilege escalation</li>
+<li>IDOR vulnerabilities</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Input Validation</strong></summary>
+Test form fields and parameters
+<ul>
+<li>Command injection</li>
+<li>XML injection</li>
+<li>Template injection</li>
+<li>NoSQL injection</li>
+</ul>
+</details>
+
+</details>
+
+<details>
+<summary><h3>4. Exploitation</h3></summary>
+
+<details>
+<summary><strong>Advanced SQL Injection</strong></summary>
+<ul>
+<li>Database enumeration</li>
+<li>Data extraction</li>
+<li>Command execution</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>XSS Exploitation</strong></summary>
+<ul>
+<li>Cookie stealing</li>
+<li>Keylogging</li>
+<li>Phishing payloads</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>File Inclusion</strong></summary>
+<ul>
+<li>Local File Inclusion (LFI)</li>
+<li>Remote File Inclusion (RFI)</li>
+<li>PHP wrapper exploitation</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Command Injection</strong></summary>
+<ul>
+<li>OS command execution</li>
+<li>Reverse shell establishment</li>
+<li>File system access</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Authentication Bypass</strong></summary>
+<ul>
+<li>SQL injection bypass</li>
+<li>Logic flaws exploitation</li>
+<li>Session manipulation</li>
+</ul>
+</details>
+
+</details>
+
+<details>
+<summary><h3>5. Post-Exploitation</h3></summary>
+
+<details>
+<summary><strong>Privilege Escalation</strong></summary>
+<ul>
+<li>Kernel exploits</li>
+<li>Misconfigured permissions</li>
+<li>Vulnerable services</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Network Enumeration</strong></summary>
+<ul>
+<li>Internal network scanning</li>
+<li>Service discovery</li>
+<li>Asset identification</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Data Exfiltration</strong></summary>
+<ul>
+<li>Database dumping</li>
+<li>File system access</li>
+<li>Configuration retrieval</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Persistence</strong></summary>
+<ul>
+<li>Backdoor placement</li>
+<li>Credential harvesting</li>
+<li>System monitoring</li>
+</ul>
+</details>
+
+</details>
+
+<details>
+<summary><h3>6. Reporting</h3></summary>
+
+<details>
+<summary><strong>Comprehensive HTML Reports</strong></summary>
+<ul>
+<li>Executive summary</li>
+<li>Technical details</li>
+<li>Proof of concept</li>
+<li>Remediation steps</li>
+<li>Risk ratings</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>JSON Export</strong></summary>
+<ul>
+<li>Machine-readable format</li>
+<li>Integration-ready data</li>
+<li>Detailed scan results</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Database Storage</strong></summary>
+<ul>
+<li>Historical scan data</li>
+<li>Vulnerability tracking</li>
+<li>Progress monitoring</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Custom Templates</strong></summary>
+<ul>
+<li>Customisable report formats</li>
+<li>Brand-specific styling</li>
+<li>Multiple export options</li>
+</ul>
+</details>
+
+</details>
 
 > **Note**: This tool is designed for educational purposes and authorised security testing only. Always obtain proper permission before testing any system or network.
 
